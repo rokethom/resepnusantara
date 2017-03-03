@@ -1,8 +1,8 @@
-var express = require("express");
-var request = require("request");
-var bodyParser = require("body-parser");
+const express = require("express");
+const request = require("request");
+const bodyParser = require("body-parser");
 
-var app = express();
+const app = express();
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.listen((process.env.PORT || 5000));
@@ -14,7 +14,7 @@ app.get("/", function (req, res) {
 
 // Facebook Webhook
 // Used for verification
-app.get("/webhook", function (req, res) {
+app.get("/webhook/", function (req, res) {
   if (req.query["hub.verify_token"] === "resep") {
     console.log("Verified webhook");
     res.status(200).send(req.query["hub.challenge"]);
