@@ -1,0 +1,19 @@
+{
+  "name": "resepnusantara",
+  "version": "1.0.0",
+  "description": "Resep Masakan Nusantara",
+  "main": "index.js",
+  "scripts": {
+    "test": "Resep Nusantara"
+  },
+  
+  "keywords": [
+    "Resep",
+    "masakan",
+    "dan",
+    "minuman",
+    "nusantara"
+  ],
+  "author": "Sigit Azis",
+  "license": "MIT"
+}
