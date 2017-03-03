@@ -6,7 +6,6 @@
   "scripts": {
     "test": "Resep Nusantara"
   },
-  
   "keywords": [
     "Resep",
     "masakan",
@@ -15,5 +14,11 @@
     "nusantara"
   ],
   "author": "Sigit Azis",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.0",
+    "express": "^4.15.0",
+    "mongoose": "^4.8.5",
+    "request": "^2.79.0"
+  }
 }
